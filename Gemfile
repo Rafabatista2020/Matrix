@@ -5,7 +5,13 @@ gem 'rspec'
 gem 'rake'
 gem 'selenium-webdriver'
 gem 'capybara'
-#gem 'page-object', '~> 2.0'
-#gem 'data_magic'
-require'rest-client'
+gem 'httparty'
+gem 'rest-client'
+gem 'json'
+gem 'site_prism'
+#gem page-object', '~> 2.0'
+#gem'data_magic'
 
+
+
+ 

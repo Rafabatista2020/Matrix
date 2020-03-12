@@ -1,13 +1,13 @@
-Dado("que estou logado na home") do
+Dado("que estou na home e logado") do
+    visit "http://automationpractice.com/index.php"
     find(:xpath, '//*[@id="header"]/div[2]/div/div/nav/div[1]/a').click
     find(:xpath, '//*[@id="email"]').set('rafael.goncalves2014@hotmail.com')
-    find(:xpath, '//*[@id="passwd"]').set('ra030303')
+    find(:xpath, '//*[@id="passwd"]').set('ra0303')
     find(:xpath, '//*[@id="SubmitLogin"]/span').click
 end
-  
+
 Quando("clicar em Specials") do
     find(:xpath, '//*[@id="block_various_links_footer"]/ul/li[1]/a').click 
-
 end 
   
 Quando("clicar no anuncio Printed Chiffon Dress") do
@@ -34,12 +34,11 @@ Quando("clicar na caixinha check-box do frete") do
     find(:xpath, '//*[@id="form"]/div/p[2]/label').click
 end
   
-Quando("clicar nos no botão proceed to checkout 4") do
+Quando("clicar no botão proceed to checkout 4") do
     find(:xpath, '//*[@id="form"]/p/button').click
-    
 end
   
-Quando("clicar no botao Pay by bank wire order processing will be longer") do
+Quando("clicar no botao Pay by bank") do
    find(:xpath, '//*[@id="HOOK_PAYMENT"]/div[1]/div/p/a').click
 end
   
@@ -48,5 +47,5 @@ Quando("clicar no botao i confirm my order") do
 end
   
 Entao("a ordem de pedido será confirmada") do
-    pending # Write code here that turns the phrase above into concrete actions
+    
 end

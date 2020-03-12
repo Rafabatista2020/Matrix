@@ -3,12 +3,12 @@ require 'cucumber'
 require 'selenium-webdriver'
 require 'capybara'
 require 'capybara/cucumber'
+require 'rest-client'
+require 'json'
+require 'site_prism'
+require 'httparty'
 #require 'page-object'
 #require 'data_magic'
-require'rest-client'
-require 'json'
-
-
 
 #World(PageObject::PageFactory)
 
